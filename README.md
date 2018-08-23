@@ -25,7 +25,7 @@ zpool1  13.6T  4.21T  9.39T         -    15%    30%  1.00x  ONLINE  -
     sdf      -      -      -         -      -      -
 ```
 
-And this is what it is like today:
+And this is what it is like today much later and balanced:
 
 ```
 NAME   SIZE  ALLOC   FREE  EXPANDSZ   FRAG    CAP  DEDUP  HEALTH  ALTROOT
