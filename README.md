@@ -25,6 +25,22 @@ zpool1  13.6T  4.21T  9.39T         -    15%    30%  1.00x  ONLINE  -
     sdf      -      -      -         -      -      -
 ```
 
+And this is what it is like today:
+
+```
+NAME   SIZE  ALLOC   FREE  EXPANDSZ   FRAG    CAP  DEDUP  HEALTH  ALTROOT
+zpool1  13.6T  9.84T  3.75T         -    25%    72%  1.00x  DEGRADED  -
+  mirror  3.62T  2.62T  1.01T         -    26%    72%
+    ata-WDC_WD40EFRX-68WT0N0_WD-WCC4E1984538      -      -      -         -      -      -
+    ata-WDC_WD40EFRX-68WT0N0_WD-WCC4E1984290      -      -      -         -      -      -
+  mirror  2.72T  1.93T   807G         -    29%    71%
+    ata-WDC_WD30EFRX-68EUZN0_WD-WCC4N1DCX6L4      -      -      -         -      -      -
+    ata-WDC_WD30EFRX-68EUZN0_WD-WMC4N1605537      -      -      -         -      -      -
+  mirror  7.25T  5.29T  1.96T         -    24%    73%
+    ata-WDC_WD80EFZX-68UW8N0_VLKZKBBV      -      -      -         -      -      -
+    ata-WDC_WD80EFZX-68UW8N0_R6G68HBY      -      -      -         -      -      -
+```
+
 ### Deduplication Off
 As this script works by copying files before deleting the original and renaming the copy back to that of the original, so **you probably need deduplication switched off** for the principle to properly work. You can do this in Ubuntu 16.04 with the following command:
 
