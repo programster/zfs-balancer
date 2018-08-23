@@ -10,7 +10,7 @@ As this script works by copying files before deleting the original and renaming 
 sudo zfs set dedup=off myZpoolName
 ```
 
-Note: this script will work on one file at a time rather than all at once, so it's not a disaster if you terminate the script mid-way through. The worst thing that could happen is that you either have the original file and a copy with a number extension, or you just have the copy with a number extension rather than the original, but you never lose/corrupt data.
+Note: this script will work on one file at a time rather than all at once, so it's not a disaster if you terminate the script mid-way through. The worst thing that could happen is that you either have the original file and a copy with a number extension, or you just have the copy with a number extension rather than the original, but you never lose/corrupt a file.
 
 ## Requirements
 This script requires PHP 5.5 or higher. You can usually install PHP on Ubuntu 16.04 with
